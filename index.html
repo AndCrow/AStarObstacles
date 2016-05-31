@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="./public/css/main.min.css">
+</head>
+<body>
+
+    <div class="content">
+        <h1>A* for avoid obstacles </h1>
+
+        <p>
+            Choice point type, mark point on grid; <br>
+            Available only one start and one end point. <br>
+            Opened points marked <span class="opened">yellow</span>, path marked <span class="path">blue</span> <br>
+            Clear before new start
+        </p>
+
+        <div class="controls">
+            <input type="number" id="grid" placeholder="Number of cells" value="10">
+
+            <div class="button-start">Start point</div>
+            <div class="button-obstacle">Obstacle</div>
+            <div class="button-end">End point</div>
+        </div>
+
+        <section class="area">
+            <canvas id="canvas" height="900" width="900"></canvas>
+        </section>
+
+        <div class="controls">
+            <div class="button-find">Find path!</div>
+            <div class="button-clear">Clear</div>
+        </div>
+    </div>
+
+  <script src="./public/js/index.bundle.js"></script>
+</body>
+</html>

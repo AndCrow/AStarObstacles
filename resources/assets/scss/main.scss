@@ -1,0 +1,114 @@
+.content{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+
+    min-height: 90vh;
+
+    display: flex;
+    flex-flow: column wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    h1,
+    .controls,
+    p{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    p{
+        max-width: 550px;
+        margin: 0 auto 20px auto;
+        text-align: left;
+    }
+
+    .opened {
+        color: black;
+        background: #FFFEC9;
+    }
+
+    .path {
+        color: black;
+        background: #add8e6;
+    }
+
+    .controls{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .button-start,
+        .button-end,
+        .button-obstacle,
+        .button-find,
+        .button-clear{
+            box-sizing: border-box;
+            height: 40px;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+
+            cursor: pointer;
+        }
+
+        .button-start{
+            background: lightgreen;
+        }
+
+        .button-obstacle{
+            background: #535353;
+            color: white;
+        }
+
+        .button-end{
+            background: red;
+            font-weight: bold;
+        }
+        .button-find,
+        .button-clear{
+            background: lightblue;
+            font-weight: bold;
+        }
+    }
+
+    input,
+    button{
+        outline: 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        height: 40px;
+    }
+
+    .area{
+
+        canvas{
+            height: 35vw;
+            width: 35vw;
+        }
+
+        margin: 20px 0;
+
+        align-self: center;
+
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        .area{
+            canvas{
+                height: 90vw;
+                width: 90vw;
+            }
+        }
+    }
+}
